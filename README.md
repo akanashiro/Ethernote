@@ -1,7 +1,7 @@
 # Ethernote
 
 My first attempt to write a smart contract.
-This is a decentralized note taking application inspired by Evernote.
+This is a decentralized note taking application inspired by note taking apps.
 
 A note consists in:
 - Title.
