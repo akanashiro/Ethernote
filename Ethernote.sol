@@ -49,7 +49,7 @@ contract Ethernote {
 
   // Can only edit a Note if it is Editable
   function editNote(uint aPosition, string memory inContent) public {
-    require(arrayNotes[aPosition].isEditable == true, "Note is note editable");
+    require(arrayNotes[aPosition].isEditable == true, "Note is not editable");
     arrayNotes[aPosition].strContent = inContent;
     arrayNotes[aPosition].timeStamp = block.timestamp; // Last update
   }
@@ -66,7 +66,7 @@ contract Ethernote {
   }
 
   // Get an specific note
-  function getNote(uint aPosition) public view returns (string memory outTitle, string memory outContent, bool memory outEditable, uint memory outTimestamp){
+  function getNote(uint aPosition) public view returns (string memory outTitle, string memory outContent, bool outEditable, uint outTimestamp){
 
     outTitle = arrayNotes[aPosition].strTitle;
     outContent = arrayNotes[aPosition].strContent;
@@ -79,4 +79,5 @@ contract Ethernote {
   {
     return arrayNotes;
   }
+
 }
