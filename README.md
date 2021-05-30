@@ -10,11 +10,13 @@ A note consists in:
 - Timestamp.
 
 **Functions:**
-- pushNote.
-- editNote in a certain position.
-- toggleEditable (true or false).
-- getNote returns a certain position.
-- getNotes returns an array of notes.
+- pushNote: create a new note at final position.
+- editNote: change comment in a certain position.
+- toggleEditable: turns note non-editable (if it is editable)
+- getNote: returns a certain position.
+- getNotes: returns an array of notes.
+- flushNotes: delete all notes.
+- deleteNote: delete a note in a certain position.
 
 **Restriction:**
 - Only owner can edit
