@@ -9,12 +9,12 @@ A note consists in:
 - Editable (enabled/disabled).
 - Timestamp.
 
-Functions:
+**Functions:**
 - pushNote.
 - editNote in a certain position.
 - toggleEditable (true or false).
 - getNote returns a certain position.
 - getNotes returns an array of notes.
 
-Restriction:
+**Restriction:**
 - Only owner can edit

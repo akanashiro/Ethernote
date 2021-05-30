@@ -79,5 +79,4 @@ contract Ethernote {
   {
     return arrayNotes;
   }
-
 }
