@@ -65,7 +65,7 @@ contract Ethernote {
   }
   
   // I haven't found an cheaper way to delete a note and don't loose order
-  // I think it will consume a lot of gas if notes are a lot!
+  // I think it will consume a bunch of gas if notes array is too large!
   function deleteNote(uint aPosition) public onlyOwner {
     for (uint i = aPosition; i < arrayNotes.length - 1; i++){
         arrayNotes[i] = arrayNotes[i+1];
