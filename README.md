@@ -20,3 +20,6 @@ A note consists in:
 
 **Restriction:**
 - Only owner can edit
+
+** Update **
+- Apply events
