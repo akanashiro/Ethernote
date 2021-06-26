@@ -1,0 +1,214 @@
+body {
+  background-color:#F0F0F0;
+  padding: 2em;
+  font-family: 'Raleway','Source Sans Pro', 'Arial';
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+label {
+  display:block;
+  margin-bottom:10px;
+}
+input {
+  /* padding:10px; */
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+input.box{
+  width: 50%;
+}
+
+button {
+ /* margin: 2em 0; 
+  padding: 1em 1em;*/
+  border: 1px; /* Some padding */
+  /*display:block;*/
+}
+
+ /* Style buttons */
+ .btn {
+  background-color: DodgerBlue; /* Blue background */
+  /* border: none;*/ /* Remove borders */
+
+  color: white; /* White text */
+  padding: 5px 5px;  /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+.btn.action{
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-left-width: 1px;
+  border-left-style: solid;
+  width: 32px;
+  height: 32px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+} 
+
+.btn.disabled{
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-left-width: 1px;
+  border-left-style: solid;
+  width: 32px;
+  height: 32px;  
+  background-color: Grey;
+}
+
+#account {
+
+  font-style: italic;
+}
+
+#loader {
+  width: 100px;
+  display: none;
+}
+
+.loaderChico{
+  width:30px;
+  display: none;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  /*background: #ccc;*/
+}
+
+inputs {
+  float: left;
+  width: 70%;
+  /* background-color: #f1f1f1; */
+}
+
+section.loader{
+ float: right;
+ width: 10%;
+ height:100%;
+}
+
+h1.etherNote {
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 28px;
+    letter-spacing: 1px;
+    word-spacing: 0px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: capitalize;
+    }
+
+label.etherLabel {
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 19px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    }
+
+div.MyTable {
+    border: 1px solid #1C6EA4;
+    background-color: #EEEEEE;
+    width: 75%;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  .divTableLoad{
+    width: 50px;
+    border: 1px solid #AAAAAA;
+    padding: 3px 2px;
+  }
+  .notesboardTable.MyTable .divTableCell, .notesboardTable.MyTable .divTableHead {
+    border: 1px solid #AAAAAA;
+    padding: 3px 2px;
+  }
+  .notesboardTable.MyTable .divTableBody .divTableCell {
+    font-size: 13px;
+    font-family: Impact, Charcoal, sans-serif;
+  }
+  .divTableCell.center {
+    font-size: 13px;
+    font-family: Impact, Charcoal, sans-serif;
+    text-align: center;
+  }
+
+
+  .notesboardTable.MyTable .divTableRow:nth-child(even) {
+    background: #D0E4F5;
+  }
+  .notesboardTable.MyTable .divTableHeading {
+    background: DodgerBlue;
+    border-bottom: 2px solid #444444;
+  }
+  .notesboardTable.MyTable .divTableHeading .divTableHead {
+    font-size: 15px;
+    font-family: Impact, Charcoal, sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-left: 2px solid #D0E4F5;
+  }
+  .notesboardTable.MyTable .divTableHeading .divTableHead:first-child {
+    border-left: none;
+  }
+  
+  .MyTable .tableFootStyle {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #D0E4F5;
+    background: -moz-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+    background: -webkit-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+    background: linear-gradient(to bottom, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+    border-top: 2px solid #444444;
+  }
+  .MyTable .tableFootStyle {
+    font-size: 14px;
+  }
+  .MyTable .tableFootStyle .links {
+       text-align: right;
+  }
+  .MyTable .tableFootStyle .links a{
+    display: inline-block;
+    background: #1C6EA4;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+  .MyTable.outerTableFooter {
+    border-top: none;
+  }
+  .MyTable.outerTableFooter .tableFootStyle {
+    padding: 3px 5px; 
+  }
+  /* DivTable.com */
+  .divTable{ display: table; }
+  .divTableRow { display: table-row; }
+  .divTableHeading { display: table-header-group;}
+  .divTableCell, .divTableHead { display: table-cell;}
+  .divTableHeading { display: table-header-group;}
+  .divTableFoot { display: table-footer-group;}
+  .divTableBody { display: table-row-group;}

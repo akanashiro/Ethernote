@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="widdivTableHead=device-widdivTableHead, initial-scale=1.0" />
+  <title>Ethernote dApp by Agustín Kanashiro</title>
+
+  <!--link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+        type="text/css" /-->
+  <link href="./estilo.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script src="./node_modules/web3/dist/web3.min.js"></script>
+  <script src="./index.js"></script>
+</head>
+
+<body>
+  <div class = "container">
+    <h1 class='etherNote'>Ethernote dApp</h1>
+
+    <label class ="etherLabel">Notes from <span id="account"></span></label>
+
+      <section>
+        <nav>
+          <label for="name" class="col-lg-2 control-label">Note title</label>
+        </nav>
+        <inputs>
+          <input id="strTitle" type="text" class="input box">
+        </inputs>
+        <nav>
+          <label for="name" class="col-lg-2 control-label">Content</label>
+        </nav>
+        <inputs>
+          <input id="strContent" type="text" class="input box">  
+        </inputs>
+        <nav><img id = "loader" src = "images/Blocks-1s-200px.gif"></nav>
+          <inputs><button class="btn" id="btn-add">Add Note</button></inputs>
+      </section>
+      <br>
+    <div class="notesboard" style = "display:block">
+      <table class="notesboardTable MyTable">
+        <thead class="notesboardTableHead divTableHeading">
+          <tr class="notesboardTableHeaderRow divTableRow">
+            <th class="divTableHead">Title</th>
+            <th class="divTableHead">Description</th>
+            <th class="divTableHead">Last Update</th>
+            <th class="divTableHead">Locked?</th>
+            <th class="divTableHead">Action</th>
+            <th class="divTableHead"></th>
+          </tr>
+        </thead>
+        <tbody class="notesboardTable-Body divTableBody" id='notesboardTable-Body'>
+    
+        </tbody>
+      </table>
+    </div>
+</body>
+
+</html>
